@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./CSS/TH2.css">
+        <script scr="./JS/Th2.js"></script>
+    </head>
+    <body>
+    <form>
+       <table border="1px" style="width:500px; border-color: blue;">
+           <tr>
+               <td>Lương</td>
+               <td ><input id="luong" type="text"></td>
+           </tr>
+           <tr>
+               <td>Hệ số lương</td>
+               <td><input type="number" id="heso"></td>
+           </tr>
+           <tr align="center">
+               <td colspan="2"><input type="button" onclick="getluong()" value="Tính lương tháng"></td>
+           </tr>
+           <tr>
+               <td>Lương tháng</td>
+               <td><div id="demo"></div></td>
+           </tr>
+       </table>
+       </form>
+       <script>
+           function getluong(){
+                var x,y;
+                x=document.getElementById("luong").value;
+                y=document.getElementById("heso").value;
+                document.getElementById("demo").innerHTML = parseInt(x) * parseFloat(y);
+                //alert(parseInt(x) * parseInt(y));
+                }
+       </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trương Thị Mỹ Linh</title>
+
+    <link rel="stylesheet" href="stylesheet.css"/>
+</head>
+<body>
+    <header>
+        <p>Đăng ký CV</p> 
+    </header>
+    <form>
+        Họ và tên <input type="text" name="hoten" placeholder="Nguyễn Văn C"/></br>
+        Địa chỉ <input type="text" name="diachi" placeholder="TP.HCM"/></br>
+        Điện thoại <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+        required name="dienthoai" placeholder="0900000000"/></br>
+        Email <input type="email" name="email" placeholder="ex@mail.com"/></br>
+        Nghề nghiệp <input type="text" name="nghenghiep" placeholder="Designer"/></br>
+        Ảnh đại diện <input type="file" name="avatar" /> </br>
+        <p>Kỹ năng</p> </br>
+        <div id="main-kn">
+        <div class="kynang">
+            Tên kỹ năng <input type="text" class="tenkynangclass" name="tenkynang" placeholder="NodeJS"/></br>
+            Mức độ <input type="range" name="mucdo" min="0" max="100" step="10"/></br>
+        </div></br>
+        </div>
+        <a href="#" id="them">Thêm</a></br></br>
+
+        <input type="submit" name="submit" value="Đăng ký"/>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="event.js"></script>
+</body>
+</html>

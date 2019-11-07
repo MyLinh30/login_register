@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Truong Thi My Linh</title>
+      
+    <body>
+        <header>
+            <h2>Mua vé</h2>
+        </header>
+        <form>
+                <select name="select_list" multiple="multiple" id="multi-selectbox">
+                        <option value="val1">option 1</option>
+                        <option value="val2">option 2</option>
+                        <option value="val3">option 3</option>
+                        <option value="val4">option 4</option>
+            </select>
+                
+                    <script>
+                        $(document).ready(function() {
+                            $('#').click(function(){
+                                alert($('#multi-selectbox').val());
+                            });
+                        });
+                    </script>
+            Ngày chiếu <input type="date" name="ngaychieu" placeholder="dd/mm/yyyy"><br>
+            Phim <select id="phim" class="tenphim"  >
+                <option >Yêu em bất chấp</option>
+                <option>Tháng năm rực rỡ</option>
+                <option>Và em sẽ đến</option>
+                <option>Chuyện ma lúc 3h sáng</option>
+            </select><br>
+            Suất chiếu <select id="suatchieu"  class="tensuatchieu" >
+                <option value="45000">9h-12h</option>
+                <option value="45000">13h-16h</option>
+                <option value="55000">17h-20h</option>
+                <option value="35000">22h-2h</option>
+            </select><br>
+            Phòng chiếu <select id="phongchieu" class="tenphongchieu">
+                <option value="1.0">Đồng</option>
+                <option value="1.2">Bạc</option>
+                <option value="1.5">Vàng</option>
+                <option value="2.0">Kim cương</option>
+            </select><br>
+            Chọn chỗ ngồi <select id="choncho" class="tenchoncho" multiple size="4">
+                <option>Ghế 01</option>
+                <option>Ghế 02</option>
+                <option>Ghế 03</option>
+                <option>Ghế 04</option>            
+            </select><br>
+            <input type="submit" name="muavephim" id="muave" value="Mua vé">
+        </form>
+        <script src="./js/jquery-3.2.1.min.js"></script>
+        <script src="./dethi.js"></script>
+        
+    </body>
+</html>

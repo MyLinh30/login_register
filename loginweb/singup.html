@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-sacle=1.0">
+        <!--JQuery-->
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <!--BS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <style>
+            body {  
+padding-top: 0px;
+}
+.form-control { 
+margin-bottom: 10px;
+}
+.login-screen-bg {  
+background-color: #EFEFEF;
+}
+        </style>
+        <div class="container-fluid"> 
+            <hr style="border-color:pink;">
+            <h1 class="text-center" style="color:tomato;"><i>ĐĂNG KÝ THÀNH VIÊN SHOP THỜI TRANG&reg;</i></h1> 
+                <div class="row"> 
+                    <div class="col-xs-12 col-sm-12 col-md-4 well well-sm col-md-offset-4"> 
+                        <legend><a href="#"><i class="glyphicon glyphicon-globe"></i></a> Đăng ký thành viên!
+                      </legend> 
+                      <form action="1.php" method="post" class="form" role="form"> 
+                       <div class="row"> 
+                        <div class="col-xs-6 col-md-6"> <input class="form-control"  name="firstname" placeholder="Nhập vào họ" required="" autofocus="" type="text"> 
+                        </div> 
+                        <div class="col-xs-6 col-md-6"> <input class="form-control" name="lastname" placeholder="Nhập tên" required="" type="text"> 
+                        </div> 
+                       </div> 
+                       <input class="form-control" name="youremail" placeholder="Email" type="email"> 
+                       <input class="form-control" name="password" placeholder="Mật khẩu" type="password"> 
+                       <input class="form-control" name="retypepassword" placeholder="Nhập lại mật khẩu" type="password"> 
+                       <label for=""> Ngày sinh</label> 
+                       <div class="row"> 
+                        <div class="col-xs-4 col-md-4"> <input type="text" class="form-control" placeholder="Ngày sinh">   
+                        </div> 
+                        <div class="col-xs-4 col-md-4"> <input type="text" class="form-control" placeholder="Tháng sinh">             
+                        </div> 
+                        <div class="col-xs-4 col-md-4"> <input type="text" class="form-control" placeholder="Năm sinh">            
+                        </div> 
+                       </div> 
+                       <label class="radio-inline">
+                        <input name="sex" id="inlineCheckbox1" value="male" type="radio" checked> Nam </label> 
+                        <label class="radio-inline">          
+                        <input name="sex" id="inlineCheckbox2" value="female" type="radio"> Nữ </label> 
+                       <br> 
+                       <br> 
+                       <button class="btn btn-lg btn-danger btn-block" type="submit"> Đăng ký</button> 
+                      </form> 
+                     </div> 
+                    </div>
+                   </div>
+    </body>
+</html>

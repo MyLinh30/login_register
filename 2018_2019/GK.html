@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <script src="./GK.js"></script>
+    </head>
+    <body>
+        <input  type="date" id="ngaysinh">
+        <div id="demo"></div>
+        <input type="button" value="Hiển thị ngày" onclick="getdaysinh()">
+        <script>
+            function getdaysinh(){
+            var x=document.getElementById("ngaysinh").value;
+            document.getElementById("demo").innerHTML=x;
+            }
+        </script>
+
+
+
+        <form>
+        <table border="1" style="border-collapse: collapse">
+            <tr>
+                <td colspan="2" align="center"><strong>Đăng ký CV</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Họ và tên</strong></td>
+                <td><input type="text" placeholder="Nguyễn Văn C"></td>
+            </tr>
+            <tr>
+                <td><strong>Địa Chỉ</strong></td>
+                <td><input type="text" placeholder="Tp.HCM"></td>
+            </tr>
+            <tr>
+                <td><strong>Điện thoại</strong></td>
+                <td><input type="text" placeholder="0900000000"></td>
+            </tr>
+            <tr>
+                <td><strong>Email</strong></td>
+                <td><input type="text" placeholder="ex@gmail"></td>
+            </tr>
+            <tr>
+                <td><strong>Nghề nghiệp</strong></td>
+                <td><input type="text" placeholder="Designer"></td>  
+            </tr>
+            <tr>
+                <td><strong>Ảnh đại diện</strong></td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td><strong>Kỹ năng</strong></td>
+                <td>
+                    <table border="1" style="border-collapse: collapse;">
+                        <tr>
+                            <td><strong>Tên kỹ năng</strong></td>
+                            <td><input id="kinang" type="text" placeholder="Node JS"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mức độ</strong></td>
+                            <td><input type="range" min="0" max="100" step="10" id="ran"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <a id="them" href="#" onclick="themkynang()" > Thêm</a>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input type="button" value="Đăng ký" ></td>
+            </tr>
+        </table>
+        <id id="ketqua"></id>
+        <div class="container">
+            <select name="agegroup">
+                <option value="0">-- Pls Select --</option>
+                <option value="1">6-16</option>
+                <option value="2">7-25</option>
+                <option value="3">26+</option>
+            </select>
+            <input type="submit" >
+            
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <!--<style>
+            ul li{
+                list-style: none;
+            }
+        </style>-->
+        <ul>
+            <li>Truong</li>
+            <li>Thi</li>
+            <li>My</li>
+            <li>Linh</li>
+        </ul>
+
+    </form>
+    </body>
+</html>
